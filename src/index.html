@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alunos e Notas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Lista de Alunos</h1>
+      <ul id="alunos-list"></ul>
+      <button id="reveal-button">Alunos Aprovados</button>
+      <div id="overlay" class="overlay"></div>
+      <div id="popup" class="popup">
+        <h2>
+          <p>
+            Alunos com Notas Maiores ou Iguais a 6 <br />
+            Aprovados por média!
+          </p>
+        </h2>
+        <ul id="alunos-com-notas-maiores-list"></ul>
+        <button id="close-button">Fechar</button>
+      </div>
+
+      <div class="overlay"></div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
