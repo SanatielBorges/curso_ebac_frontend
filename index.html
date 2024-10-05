@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de Tarefas Diárias</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Minhas Tarefas Diárias</h1>
+
+      <form id="taskForm">
+        <label for="task">Tarefa:</label>
+        <input type="text" id="task" required />
+
+        <label for="date">Data:</label>
+        <input type="date" id="date" required />
+
+        <button type="submit">Adicionar Tarefa</button>
+      </form>
+
+      <h2 id="tasksTitle">Tarefas do Dia</h2>
+      <ul id="tasksToday"></ul>
+
+      <button id="manageTasks">Gerenciar Tarefas</button>
+      <button id="backToToday" style="display: none">
+        Voltar às Tarefas do Dia
+      </button>
+      <button id="printTasks">Imprimir Tarefas</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
